@@ -1,0 +1,117 @@
+.testimonials {
+    padding: 80px 0;
+    background-color: var(--background-color);
+  }
+  
+  .testimonial-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .testimonial-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    flex: 1;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .testimonial-content {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: var(--text-light);
+    font-style: italic;
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .author-info h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--primary-color);
+  }
+  
+  .author-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-light);
+  }
+  
+  .stars {
+    display: flex;
+    margin-bottom: 15px;
+    gap: 5px;
+  }
+  
+  .slider-btn {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+  }
+  
+  .slider-btn:hover {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+  
+  .testimonial-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .dot.active {
+    background-color: var(--secondary-color);
+  }
+  
+  @media (max-width: 768px) {
+    .testimonial-slider {
+      flex-direction: column;
+    }
+    
+    .slider-btn {
+      display: none;
+    }
+  }
+  
